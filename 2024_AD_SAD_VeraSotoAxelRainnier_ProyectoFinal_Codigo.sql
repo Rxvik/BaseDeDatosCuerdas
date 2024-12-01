@@ -155,7 +155,7 @@ GROUP BY
 CREATE DATABASE IF NOT EXISTS Cuerdas;
 USE Cuerdas;
 
--- Una vez ejecutadas las lineas anteriores, ejecutar cada linea anterior que comience con CREATE ya sea TABLE, PROCEDURE O VIEW
+-- Una vez ejecutadas las lineas anteriores, ejecutar cada linea anterior que comience con CREATE ya sea TABLE, PROCEDURE, TRIGGER O VIEW
 
 -- Ingresar el producto a vender
 SELECT * FROM Productos; -- Con esta linea verificamos que no hay productos registrados en la tabla 
