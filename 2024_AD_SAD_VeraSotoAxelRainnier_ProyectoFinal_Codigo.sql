@@ -226,14 +226,14 @@ INSERT INTO Detalle_Pedidos (ID_Pedido, ID_Unidad) -- Ingresar el ID del usuario
 VALUES 
       (1, 1), -- En este caso, el cliente 1 compro la unidad con ID 1
       (2, 11), (2, 12), -- En este caso, el cliente 2 compro las unidadescon ID 11 y 12 
-	  (3, 21), (3, 22), (3, 23), -- En este caso el cliente 3 compro las unidades 21, 22, y 23
-	  (4, 31), (4, 32), (4, 33), (4, 34), -- En este caso el cliente 4 compro las unidades 31, 32, 33 y 34
-	  (5, 41), (5, 42), (5, 43), (5, 44), (5, 45); -- En este caso el cliente 5 compro las unidades 41, 42, 43, 44 y 45
+      (3, 21), (3, 22), (3, 23), -- En este caso el cliente 3 compro las unidades 21, 22, y 23
+      (4, 31), (4, 32), (4, 33), (4, 34), -- En este caso el cliente 4 compro las unidades 31, 32, 33 y 34
+      (5, 41), (5, 42), (5, 43), (5, 44), (5, 45); -- En este caso el cliente 5 compro las unidades 41, 42, 43, 44 y 45
 SELECT * FROM Detalle_Pedidos; -- Verificar que los pedidos ingresados se agregaron correctamente a la tabla
 SELECT * FROM Vista_Pedidos; -- Esta vista simplifica la verificacion de los datos detallando cuantas unidades adquirio el cliente
 SELECT * FROM Unidades; -- Si volvemos a verificar las unidades, veremos que las unidades ongresadas han sido marcadas como 'Vendido'
  
- 
+ -- Ejecutar la siguientes lineas una por una para reiniciar los registros 
  /*
 SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE TABLE Detalle_Pedidos;
